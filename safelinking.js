@@ -30,6 +30,6 @@ function start()
        'output': 'json'
       },
       contentType: 'application/json; charset=utf-8',
-      dataType: 'jsonp'  });
+      dataType: 'jsonp' });
 }
 
