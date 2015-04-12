@@ -1,3 +1,9 @@
+//  https://safelinking.net/api
+function callbackfunc(response)
+{
+  window.open(response.p_links, '_blank');
+}
+
 (function() {
   if (typeof jQuery == 'undefined') {
     var s = document.createElement('script');
@@ -12,11 +18,6 @@
   else
     start();
 })();
-  
-function callbackfunc(response)
-{
-  window.open(response.p_links, '_blank');
-}
 
 function start()
 {
@@ -31,3 +32,4 @@ function start()
       contentType: 'application/json; charset=utf-8',
       dataType: 'jsonp'  });
 }
+
